@@ -1,5 +1,8 @@
-import Link from "next/link";
 import Header from "../components/Header";
+import BackHome from "../components/BackHome";
+
+import Footer from "../components/Footer";
+import PersonnalInfo from "../components/PersonnalInfo";
 export default function About() {
   return (
     <div
@@ -38,21 +41,21 @@ export default function About() {
           如果你也在学习编程，欢迎和我一起交流学习心得！
         </p>
       </div>
-      <div style={{ marginTop: "40px" }}>
-        <Link
-          href="/"
-          style={{
-            backgroundColor: "#6c757d",
-            color: "white",
-            padding: "10px 20px",
-            borderRadius: "5px",
-            textDecoration: "none",
-          }}
-        >
-          🏠 返回首页
-        </Link>
-      </div>
-      ;
+      <PersonnalInfo
+        name="lengxuelian"
+        age="18"
+        status="nice"
+        city="changsha"
+      />
+      <PersonnalInfo
+        name="lengxuelian1"
+        age="18"
+        status="nice"
+        city="changsha"
+      />
+
+      <BackHome />
+      <Footer />
     </div>
   );
 }

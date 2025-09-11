@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Header from "./components/Header";
+import MyNave from "./components/MyNav";
+import PersonnalInfo from "./components/PersonnalInfo";
 export default function Home() {
   return (
     <div
@@ -9,6 +11,7 @@ export default function Home() {
         fontFamily: "Arial, sans-serif",
       }}
     >
+      <div />
       <Header />
 
       <h1 style={{ color: "#2c3e50", fontSize: "48px" }}>
@@ -18,7 +21,18 @@ export default function Home() {
       <p style={{ fontSize: "20px", color: "#666", margin: "20px 0" }}>
         这里是我的个人网站，点击下面的链接探索更多内容
       </p>
+
       {/* 导航菜单 */}
+      <MyNave
+        items={[
+          { name: "关于我", path: "/about" },
+          { name: "联系我", path: "/contact" },
+          { name: "我的爱好", path: "/hobbies" },
+          { name: "我的博客", path: "/blog" },
+          { name: "相册", path: "/gallery" },
+          { name: "我的第一个页面", path: "/mypage1" },
+        ]}
+      />
       <nav
         style={{
           backgroundColor: "#f8f9fa",
@@ -110,6 +124,21 @@ export default function Home() {
             }}
           >
             🎨 相册
+          </Link>
+
+          <Link
+            href="/mypage1"
+            style={{
+              backgroundColor: "#28a745",
+              color: "white",
+              padding: "12px 20px",
+              borderRadius: "8px",
+              textDecoration: "none",
+              fontSize: "16px",
+              fontWeight: "bold",
+            }}
+          >
+            mypage1
           </Link>
         </div>
       </nav>

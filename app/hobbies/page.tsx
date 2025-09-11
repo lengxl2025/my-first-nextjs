@@ -1,6 +1,8 @@
 import Header from "../components/Header";
 import Card from "../components/Card";
 import BackHome from "../components/BackHome";
+import Footer from "../components/Footer";
+
 export default function Hobbies() {
   return (
     <div
@@ -50,6 +52,7 @@ export default function Hobbies() {
       </div>
       {/*// 在页面底部添加这个*/}
       <BackHome />
+      <Footer />
     </div>
   );
 }

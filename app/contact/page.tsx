@@ -1,5 +1,7 @@
 import Header from "../components/Header";
 import BackHome from "../components/BackHome";
+import Footer from "../components/Footer";
+
 export default function Contact() {
   return (
     <div>
@@ -43,6 +45,7 @@ export default function Contact() {
       </div>
       ); Contact
       <BackHome />
+      <Footer />
     </div>
   );
 }

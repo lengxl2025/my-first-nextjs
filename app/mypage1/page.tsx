@@ -1,3 +1,5 @@
+import Footer from "../components/Footer";
+
 export default function MyPage1() {
   return (
     <div
@@ -41,6 +43,7 @@ export default function MyPage1() {
         <p>今天是我学习 Next.js 的第一天！</p>
         <p>我叫菜鸟月亮🌛</p>
       </div>
+      <Footer />
     </div>
   );
 }
