@@ -2,32 +2,25 @@ interface CardProps {
   title: string;
   content: string;
   emoji: string;
-  backgroundColor?: string;
+  bgColor?: string;
 }
 
 export default function Card({
   title,
   content,
   emoji,
-  backgroundColor = "#ffffff",
+  bgColor = "bg-white",
 }: CardProps) {
   return (
     <div
-      style={{
-        backgroundColor: backgroundColor,
-        padding: "20px",
-        borderRadius: "10px",
-        boxShadow: "0 2px 10px rgba(0,0,0,0.1)",
-        margin: "10px",
-        textAlign: "center",
-      }}
+      className="`${bgColor} rounded-xl shadow-lg hover:shadow-xl
+      transition-shadow duration-300 p-6 border border-gray-100'}>
+      <div className="
+      text-content
     >
-      <h3 style={{ fontSize: "24px", margin: "0 0 10px 0" }}>
-        {emoji} {title}
-      </h3>
-      <p style={{ fontSize: "16px", color: "#666", lineHeight: "1.5" }}>
-        {content}
-      </p>
+      <div className="trxt-4x1 mb-4">{emoji}</div>
+      <h3 className="text-x1 font-bold text-grey-800 mb-3">{title}</h3>
+      <p className="text-gray-600 leading-relaxed">{content}</p>
     </div>
   );
 }
