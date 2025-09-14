@@ -1,30 +1,31 @@
 export default function Footer() {
   return (
     <footer
-      style={{
-        backgroundColor: "#34495e",
-        color: "white",
-        padding: "30px",
-        textAlign: "center",
-        marginTop: "50px",
-      }}
+      className="bg-gradient-to-r from-gray-800 to-gray-900 text-white
+      mt-20"
     >
-      <div style={{ maxWidth: "600px", margin: "0 auto" }}>
-        <h3 style={{ margin: "0 0 15px 0" }}>感谢访问我的网站！</h3>
-        <p style={{ margin: "0 0 20px 0", fontSize: "14px", opacity: "0.8" }}>
-          这是我学习 Next.js 的成果，希望你喜欢 😊
-        </p>
-        <div
-          style={{
-            borderTop: "1px solid rgba(255,255,255,0.2)",
-            paddingTop: "20px",
-            fontSize: "12px",
-            opacity: "0.6",
-          }}
-        >
-          <p>
-            © {new Date().getFullYear()} 我的第一个网站 | 用 ❤️ 和 Next.js 制作
-          </p>
+      <div className="container mx-auto px-6 py-12">
+        <div className="grid md:grid-cols-3 gap-8">
+          <div className="text-center md:text-left">
+            <h3 className="text-2xl font-bold mb-4">我的个人网站</h3>
+            <p className="text-gray-300 leading-relaxed">
+              这是我学习 Next.js 的成果，记录着我的编程学习之路。 感谢你的访问！
+              😊
+            </p>
+          </div>
+          <div className="text-center">
+            <h3 className="text-2xl font-bold mb-4">快速导航</h3>
+            <p className="text-gray-300 leading-relaxed">🏠 首页</p>
+            <p className="text-gray-300 leading-relaxed">👋 关于我</p>
+            <p className="text-gray-300 leading-relaxed">🎨我的爱好</p>
+          </div>
+          <div className="text-center md:text-left">
+            <h3 className="text-2xl font-bold mb-4">学习统计</h3>
+            <p className="text-gray-300 leading-relaxed">📅学习天数：4天</p>
+            <p className="text-gray-300 leading-relaxed">💻代码行数：500+行</p>
+            <p className="text-gray-300 leading-relaxed">🎯完成进度：60%</p>
+            <p className="text-gray-300 leading-relaxed">☕️消耗咖啡8杯</p>
+          </div>
         </div>
       </div>
     </footer>
