@@ -40,21 +40,6 @@ export default function MyNave(props: {
             👋 {item.name}
           </Link>
         ))}
-
-        {/*<Link
-          href=
-          style={{
-            backgroundColor: "#28a745",
-            color: "white",
-            padding: "12px 20px",
-            borderRadius: "8px",
-            textDecoration: "none",
-            fontSize: "16px",
-            fontWeight: "bold",
-          }}
-        >
-          🎨 {{item.name}}
-        </Link>*/}
       </div>
     </nav>
   );

@@ -10,7 +10,11 @@ export default function Hobbies() {
       "
     >
       <Header />
-      <main className="container mx-auto px-6 py-12"></main>
+      <main className="container mx-auto px-6 py-12">
+        <div className="text-center mb-12">
+          <h2>我的爱好</h2>
+        </div>
+      </main>
 
       <Card
         title="听音乐"

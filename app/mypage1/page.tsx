@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Food1";
+import Button2 from "../components/Button2";
 
 export default function Home() {
   return (
@@ -48,7 +49,12 @@ export default function Home() {
             </div>
           </Link>
         </div>
-
+        <Button2 variant="primary" size="lg">
+          主要按钮
+        </Button2>
+        <Button2 variant="primary" size="lg">
+          ci要按钮
+        </Button2>
         {/* 成就展示 */}
         <div className="mt-16 bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto border-l-4 border-green-400">
           <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">
