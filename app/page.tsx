@@ -7,6 +7,7 @@ export default function MyPage2() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       <Header />
+
       <main className="container mx-auto px-6 py-12">
         <div className="text-center mb-12">
           <h2 className="text-5xl font-bold text-gray-800 mb-6">
