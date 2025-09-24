@@ -4,7 +4,7 @@ interface LikeButtonProps {
   initialLikes?: number;
   title: string;
 }
-export default function LikeButtonProps({
+export default function LikeButton({
   initialLikes = 0,
   title,
 }: LikeButtonProps) {

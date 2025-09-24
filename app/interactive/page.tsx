@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Counter from "../components/Counter";
+import MessageBoard from "../components/MessageBoard";
 
 export default function Interactive() {
   return (
@@ -11,6 +12,7 @@ export default function Interactive() {
         <p className="text-xl text-gray-600 text-center mt-6 mb-12">
           体验 React 的状态管理，让页面变得生动有趣！
         </p>
+        <MessageBoard />
         <Counter />
         <Footer />
       </div>
